@@ -16,6 +16,7 @@ function controle(){
     }
 
     var test = resul / (saisie1+saisie2).length;
+    
   
     if (test > 0.5) { 
         document.body.style.backgroundImage = "url('images/coeurRose.gif')";
@@ -23,7 +24,7 @@ function controle(){
     else {
         document.body.style.backgroundImage = "url('images/smiley.gif')";
     }
-    document.getElementById('demo').innerHTML = test*100 + "%";
+    document.getElementById('demo').innerHTML = test.toPrecision(4)*100 + "%";
  }
 
 
